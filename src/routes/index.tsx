@@ -1,11 +1,16 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
-import Dashboard from '../pages/Dashboard';
+import { basePath } from 'constants/constants';
+
+import Dashboard from 'pages/Dashboard';
 
 const Routes: React.FC = () => (
   <Switch>
-    <Route path="/" exact component={Dashboard} />
+    <Route exact path="/">
+      <Redirect to={basePath} />
+    </Route>
+    <Route path={basePath} exact component={Dashboard} />
   </Switch>
 );
 

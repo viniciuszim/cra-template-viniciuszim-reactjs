@@ -1,25 +1,21 @@
 import { createGlobalStyle } from 'styled-components';
 export default createGlobalStyle`
-  *{
-    margin: 0;
-    padding: 0;
-    outline: 0;
-    box-sizing: border-box;
-  }
-
+  html,
   body {
-    -webkit-font-smoothing: antialiased;
-
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
   }
 
   #root {
-    margin: 0 auto;
-    padding-bottom:8rem;
-
+    background-color: red;
+    display: flex;
+    height: 100%;
+    overflow: hidden;
   }
 
   button {
     cursor: pointer;
-
   }
 `;
