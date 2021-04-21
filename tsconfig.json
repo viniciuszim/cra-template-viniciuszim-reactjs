@@ -22,9 +22,29 @@
       "./node_modules/@types",
       "./@types"
     ],
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "src"
   },
   "include": [
     "src"
-  ]
+  ],
+  /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
+  "paths": {
+    "assets": ["./src/assets"],
+    "components": ["./src/components"],
+    "config": ["./src/config"],
+    "constants": ["./src/constants"],
+    "containers": ["./src/containers"],
+    "contexts": ["./src/contexts"],
+    "helpers": ["./src/helpers"],
+    "hooks": ["./src/hooks"],
+    "mocks": ["./src/mocks"],
+    "pages": ["./src/pages"],
+    "routes": ["./src/routes"],
+    "services": ["./src/services"],
+    "styles": ["./src/styles"],
+    "tests": ["./src/tests"],
+    "translations": ["./src/translations"],
+    "types": ["./src/types"],
+  },
 }

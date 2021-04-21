@@ -1,56 +1,64 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true
-  },
-  "extends": [
-    "plugin:react/recommended",
-    "airbnb",
-    "plugin: @typescript-eslint/recommended",
-    "prettier/@typescript-eslint",
-    "plugin:prettier/recommended"
-  ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "ecmaFeatures": {
-      "jsx": true
-    },
-    "ecmaVersion": 11,
+    "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": [
-    "react",
-    "react-hooks",
-    "@typescript-eslint",
-    "@typescript-eslint",
-    "prettier"
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "document": true,
+    "localStorage": true,
+    "window": true
+  },
+  "plugins": ["jest", "prettier", "react-hooks"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
   ],
   "rules": {
-    "prettier/prettier": "error",
-    "react/jsx-one-expression-per-line": "off",
-    "react-hooks/rules-of-hooks": "error",
-    "react-hooks/exhaustive-deps": "warn",
-    "react/jsx-filename-extension": [1, { "extensions": [".tsx"] }],
-    "import/prefer-default-export": "off",
-    "@typescript-eslint/explicit-function-return-type": [
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "class-methods-use-this": "warn",
+    "func-names": ["error", "always"],
+    "no-underscore-dangle": "off",
+    "no-unused-vars": [
       "error",
       {
-        "allowExpressions": true
+        "vars": "all",
+        "varsIgnorePattern": "[I]\\w+|[tT]ype",
+        "args": "none"
       }
     ],
-    "import/extensions": [
+    "no-useless-constructor": "off",
+    "no-var": "error",
+    "object-shorthand": ["error", "always"],
+    "prettier/prettier": [
       "error",
-      "ignorePakages",
-      { "ts": "never", "tsx": "nerver" }
-    ]
+      {
+        "singleQuote": true
+      }
+    ],
+    "react-hooks/exhaustive-deps": "off",
+    "spaced-comment": ["error", "always"]
   },
   "settings": {
     "import/resolver": {
-      "typescript": {}
+      "typescript": {},
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
     }
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/*.tsx"],
+      "rules": {
+        "react/prop-types": "off"
+      }
+    }
+  ]
 }
