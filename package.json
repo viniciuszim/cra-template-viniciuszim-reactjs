@@ -1,5 +1,5 @@
 {
-  "name": "@viniciuszim/cra-template-viniciuszim-reactjs",
+  "name": "viniciuszim/cra-template-viniciuszim-reactjs",
   "homepage": "http://localhost:3001/",
   "version": "0.1.0",
   "private": false,
