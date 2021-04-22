@@ -1,26 +1,26 @@
-# Pack Station WEB (README WIP)
+# CRA Template for React JS
 
 This README would normally document whatever steps are necessary to get your application up and running.
 
 ## What is this repository for?
 
-This repo contains the ReactJS code that builds for the LinOS Pack Station WEB Application.
+This repo contains the ReactJS first configurations to create a clean ReactJS app applying all lints, prettiers and first pages based on my personal logic.
 
 ## Stack
 
 - [ReactJS](https://reactjs.org)
 - [Prettier](https://prettier.io)
 - [Eslint](https://eslint.org)
-- [Bit](https://bit.dev)
-- [Jest](https://jestjs.io)
-- [Loggly](https://loggly.com)
+- [Bit](https://bit.dev) (WIP)
+- [Jest](https://jestjs.io) (WIP)
+- [Loggly](https://loggly.com) (WIP)
 
 ## Prerequisite Installs
 
 - [git](https://git-scm.com/downloads)
 - [nvm](https://github.com/nvm-sh/nvm#installing-and-updating) (Node v ^12.8.0)
 - [VSCode](https://code.visualstudio.com/download)
-- [Reactotron](https://github.com/infinitered/reactotron)
+- [Reactotron](https://github.com/infinitered/reactotron) (WIP)
 
 ### Introduction
 
@@ -45,13 +45,12 @@ This repo contains the ReactJS code that builds for the LinOS Pack Station WEB A
 ```
  Compiled successfully!
 
- Local: http://localhost:3001/linos-automation-packstation
+ Local: http://localhost:3001/cra-template-reactjs
 ```
 
 ## Who do I talk to?
 
-- Repo owner or admin: [Vinicius Oliveira](mailto:vinicius.oliveira@levvel.io) and/or [Amir Curic](mailto:amir.curic@levvel.io)
-- Other community or team contact: Mezzanine Team A & B
+- Repo owner or admin: [Vinicius Oliveira](mailto:viniciuszim@hotmail.com)
 
 ## Best Practices
 
@@ -115,3 +114,6 @@ yarn jest
 ```
 
 ## License
+
+Copyright viniciuzim 2021
+
